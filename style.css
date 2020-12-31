@@ -449,12 +449,17 @@ img {
       
      }
 
-
-
-     .homeHolder {
-         display: block;
+     .homeContainer {
+        margin-bottom: 40px;
      }
 
+     .homeHolder {
+         text-align: center;
+         display: inline-block;
+     }
+
+    
+     
 
 
      .Featured {
