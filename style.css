@@ -203,6 +203,27 @@ p {
 
 
 
+.buttonLight {
+    background-color: #fad672;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 2px solid  #fad672;
+    transition: 0.3s;
+}
+
+
+
+.buttonLight:hover {
+    color:  #fad672;
+    background-color: transparent;
+    border: 2px solid #fad672;
+    transition: 0.4s;
+}
+
+/* Featured */
+
+
 
 
 
