@@ -1,25 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 :root {
     --primary-color:#84CEEB;
     --secondary-color: #5CDB95;
     --tertrity-color: #FFE400;
 
     --light-grey: rgb(243, 243, 243);
+    --dark-grey: #333;
 }
 
 * {
     box-sizing: border-box;
-    padding:0;
-    margin:0;
-    font-family: lato;
+
+  
 }
 
 
 html {
     scroll-behavior: smooth;
+    
 }
 
+
+body {
+    margin: 50px 0 0 0; 
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
 ul {
     list-style-type: none;
 }
@@ -27,7 +33,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: #333;
+    color: var(--dark-grey);
 }
  h2 {
     font-weight: 300;
@@ -69,20 +75,156 @@ p {
 
 /* Nav */
 
-.nav {
-    height: 50px; 
+.nav  {
+
+    height: var(--top-height);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    background-color: white;
+    font-weight: var(--font-semi);
+    
+
+
 }
 
-.navLink a {
+.navlogo {
+    margin: auto;
+}
+
+.navToggle {
+    margin: auto;
+}
+
+
+.shopBag {
+    margin: auto;
+    margin-right: 20px;
+
+}
+
+.shopBag img {
+    width: 30px;
+}
+.navMenu {
+
+    width: 80%;
+    text-align: right;
+    padding-top: 10px;
+}
+.navMenu li {
+   
+    justify-content: space-between;
+    margin-right: 30px;
+    display: inline;
+}
+.navLink{
+    
+    color:var(--t-color);
     text-decoration: none;
 }
 
 
+.navLink:hover {
+    color: var(--primary-color);
+}
 
-/* Footer */
+.nav li a {
+    text-decoration: none;
+}
+
+.sale a{
+    color: red;
+    font-size: 20px;
+}
+
+
+
+
+
+/* Home */
+
+.home {
+    padding-top: 30px;
+    background-color: var(--light-grey);
+    overflow: hidden;
+
+}
+.homeContainer {
+    margin: 20px auto;
+}
+.homeHolder {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.homeStandText {
+    color: #e03f5a;
+    font-weight: bold;
+}
+
+.homeImg {
+   
+   margin: 30px;
+}
+
+.homeImg img {
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+.homeData {
+    margin: auto 20px;
+}
+
+.homeData a {
+    
+    text-decoration: none;
+}
+
+.buttonMain {
+    background-color: #fa768c;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 2px solid #fa768c;
+    transition: 0.3s;
+    
+}
+
+.buttonMain:hover {
+    color: #fa768c;
+    background-color: transparent;
+    border: 2px solid #fa768c;
+    transition: 0.4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .footer {
@@ -106,18 +248,40 @@ p {
 
 
 @media screen and (max-width: 768px) {
+    .nav {
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding-top: 10px;
+    }
+    .navlogo {
+      margin: 0 auto;
+    }
+
+    .navToggle {
+        margin-left: 20px;
+    }
     .navMenu  {
+        text-align: left;
         position: fixed; 
         top: 50px; 
         left: -100%; 
-        width: 70%;
+        width: 50%;
         height: 100vh;
         padding: 30px; 
         background-color: white;
         transition: 0.4s;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        border-radius: 4px;
 
     }
 
+    .navMenu li {
+        
+        justify-content: center;
+        margin: 0px 0px 10px 0px;
+        display: block;
+    }
 
 
 
@@ -131,6 +295,12 @@ p {
     .selected a {
         color: var(--secondary-color);
       
+     }
+
+
+
+     .homeHolder {
+         display: block;
      }
     
 }

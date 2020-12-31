@@ -30,26 +30,3 @@ navLink.forEach( e => e.addEventListener('click', () =>{
 }))
 
 
-
-
-const sectionScroll = document.querySelectorAll('section')
-
-
-window.addEventListener('scroll', () => {
-    const scrollY = window.pageYOffset
-
-
-    sectionScroll.forEach(e => {
-        const sectionHeight = e.offsetHeight
-        const sectionTop = e.offsetTop - 50
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight ) {
-
-            document.querySelector('.navMenu')
-
-        }
-    })
-})
-
-
-
-console.log(sectionScroll)
