@@ -468,6 +468,23 @@ img {
 
 
 
+@media screen and (max-width: 1300px) {
+    
+    .featuredContainer {
+        justify-content: space-between;
+    }
+    .item  {
+       
+     }
+
+     .item {
+         width: 100%
+     }
+
+     .item img {
+         width: 100%;
+     }
+}
 
 
 
@@ -543,7 +560,7 @@ img {
 
 
      .Featured {
-        height: 320vh;
+        height: auto;
      }
     
      
@@ -558,6 +575,10 @@ img {
 
      .collectionContainer {
          flex-direction: column;
+     }
+
+     .collectionCard img {
+         width: 100%;
      }
 
 
