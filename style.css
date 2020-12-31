@@ -57,6 +57,11 @@ p {
 
 }
 
+.grid-2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
 
 .head {
     width: 100%;
@@ -70,10 +75,50 @@ p {
 
 
 
+.buttonDark {
+    background-color: #ff3c7d;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 2px solid  #ff3c7d;
+    transition: 0.3s;
+}
+
+
+
+.buttonDark:hover {
+    color:  #ff3c7d;
+    background-color: transparent;
+    border: 2px solid #ff3c7d;
+    transition: 0.4s;
+}
+
+
+
+
+.buttonLight {
+    background-color: #fad672;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 2px solid  #fad672;
+    transition: 0.3s;
+}
+
+
+
+.buttonLight:hover {
+    color:  #fad672;
+    background-color: transparent;
+    border: 2px solid #fad672;
+    transition: 0.4s;
+}
+
+
 .sectionTab  {
     text-align: center;
     margin: 20px;
-    height: 120%;
+    height:auto;
 }
 
 
@@ -191,43 +236,9 @@ img {
     text-decoration: none;
 }
 
-.buttonMain {
-    background-color: #fa768c;
-    color: white;
-    padding: 8px 10px;
-    border-radius: 5px;
-    border: 2px solid #fa768c;
-    transition: 0.3s;
-    
-}
-
-.buttonMain:hover {
-    color: #fa768c;
-    background-color: transparent;
-    border: 2px solid #fa768c;
-    transition: 0.4s;
-}
 
 
 
-
-.buttonLight {
-    background-color: #fad672;
-    color: white;
-    padding: 8px 10px;
-    border-radius: 5px;
-    border: 2px solid  #fad672;
-    transition: 0.3s;
-}
-
-
-
-.buttonLight:hover {
-    color:  #fad672;
-    background-color: transparent;
-    border: 2px solid #fad672;
-    transition: 0.4s;
-}
 
 /* Featured */
 
@@ -317,33 +328,25 @@ img {
 .collectionContainer {
   
     margin: auto;
-    
     text-align: center;
 }
  
 
 .collectionCard {
+ 
     position: relative;
     display: inline-flex;
     margin-right: 20px;
     margin-bottom: 20px;
     background-color: var(--light-grey);
-    
     border-radius: 5px;
     transition: 0.4s;
-
-
     overflow: hidden;
-  
-
-
-
 }
 
-.collectionCard img {
-  
-  
-}
+
+
+
 
 
 .collectionData {
@@ -371,6 +374,60 @@ img {
 }
 
 
+/* Discount */
+
+.discountContainer {
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+    background-image: linear-gradient(90deg, #ffafbd,#ffc3a0 );
+    height: auto;
+    width: 50%;
+    display: flex;
+    border-radius: 5px;
+    
+}
+
+.discountText p {
+    margin-bottom: 20px;
+}
+
+.discountText {
+ text-align: right;
+ margin: auto;
+}
+
+.discountText a {
+    text-decoration: none;
+}
+
+.discountImg {
+    position: relative;
+ 
+    background-color: rgb(250, 96, 142);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+   
+    
+    
+}
+
+.disclaimer {
+    color: rgb(153, 152, 152);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -394,6 +451,29 @@ img {
 .links img {
     padding: 0px 5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Responsive Design For Device Screens*/
@@ -473,10 +553,22 @@ img {
        
      }
 
+
+    
+
      .collectionContainer {
          flex-direction: column;
      }
-    
+
+
+     .discountContainer {
+         display: block;
+         width: 100%;
+     }
+     
+    .discountImg {
+        margin-top: 30px;
+    }
 }
 
 
