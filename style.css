@@ -70,7 +70,11 @@ p {
 
 
 
-
+.sectionTab  {
+    text-align: center;
+    margin: 20px;
+    height: 120%;
+}
 
 
 /* Nav */
@@ -223,10 +227,88 @@ p {
 
 /* Featured */
 
+.Featured {
+    text-align: center;
+    margin: 20px;
+    height: 120%;
+}
 
 
+.sectionTitle  {
+  
+    font-weight: bold;
+    margin: 20px auto;
+   
+}
 
 
+.featuredContainer {
+    display: flex;
+    row-gap: 20px;
+
+    
+
+
+}
+
+.item {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    position: relative;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--light-grey);
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item img {
+    width: 400px;
+}
+.itemSale {
+    position: absolute;
+    left: 8px;
+    background-color: rgb(236, 74, 123);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    transform: rotate(-45deg);
+
+
+}
+
+
+.fashionName {
+    font-weight: bold;
+}
+
+.fashionPrice {
+    color: rgb(236, 74, 123);
+}
+
+.fashionFormerPrice {
+    text-decoration: line-through;
+}
+
+.featureText {
+    margin-top: 20px;
+    row-gap: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.featureText a {
+    text-decoration: none;
+}
+
+
+/* Collection */ 
 
 
 
@@ -322,6 +404,12 @@ p {
 
      .homeHolder {
          display: block;
+     }
+
+
+
+     .featuredContainer {
+        flex-direction: column;
      }
     
 }
