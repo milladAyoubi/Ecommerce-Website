@@ -470,13 +470,11 @@ img {
         width: 100%;
         margin: 0;
         padding: 10px;
-        border: 2px solid black;
     }
     .navlogo {
         text-align: center;
         margin: 0 auto;
         width: 30%;
-        border: 2px solid black;
     }
     .navToggle {
         padding: 2px;
