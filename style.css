@@ -490,9 +490,15 @@ img {
 text-decoration: none;
 }
 .newItemOverlay {
-    margin-top: 20px;
+margin-top: 20px;
+position: relative;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.6;
+    padding: 0px;
+ 
 }
-
 
 
 
@@ -549,6 +555,23 @@ text-decoration: none;
      .item img {
          width: 100%;
      }
+
+     
+.shopContainer {
+    display: block;
+  
+}
+
+
+.newItem {
+    gap: 20px;
+    justify-content: center;
+}
+.shopImgItem {
+    width: 100%;
+}
+
+
 }
 
 
@@ -578,7 +601,7 @@ text-decoration: none;
     .navMenu  {
         text-align: left;
         position: fixed; 
-        top: 50px; 
+        top: 40px; 
         left: -100%; 
         width: 50%;
         height: 100vh;
@@ -591,14 +614,15 @@ text-decoration: none;
     }
 
     .navMenu li {
-        
+        position: relative;
+        right: 50px;
         justify-content: center;
-        margin: 0px 0px 10px 0px;
+        
         display: block;
     }
 
-
-
+    
+   
 
     .showMenu {
         left: 0;
@@ -654,6 +678,31 @@ text-decoration: none;
      
     .discountImg {
         margin-top: 30px;
+    }
+
+    .shopContent {
+        width: 90%;
+       
+      
+    }
+
+    .shopImg {
+        width: 100%;
+    }
+
+
+    .newItem {
+        margin-top: 40px;
+    }
+
+    .newItemCard {
+        margin: 0px;
+    }
+
+    .newItemOverlay .buttonDark{
+        font-size: 10px;
+        opacity: 0.6;
+        padding: 0px;
     }
 }
 
