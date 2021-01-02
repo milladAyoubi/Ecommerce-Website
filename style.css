@@ -141,11 +141,14 @@ img {
 }
 
 .navlogo {
+    color: #ff3c7d;
     margin: auto;
+ 
 }
 
 .navToggle {
-    margin: auto;
+   
+    display: none;
 }
 
 
@@ -171,7 +174,7 @@ img {
     display: inline;
 }
 .navLink{
-    
+    margin-bottom: 15px;
     color:var(--t-color);
     text-decoration: none;
 }
@@ -217,8 +220,7 @@ img {
 }
 
 .homeImg {
-   
-   margin: 30px;
+   margin: 20px;
 }
 
 .homeImg img {
@@ -544,12 +546,11 @@ position: relative;
     .featuredContainer {
         justify-content: space-between;
     }
-    .item  {
-       
-     }
+   
 
      .item {
-         width: 100%
+         width: 100%;
+         margin: 0 10px;
      }
 
      .item img {
@@ -557,10 +558,10 @@ position: relative;
      }
 
      
-.shopContainer {
-    display: block;
+    .shopContainer {
+          display: block;
   
-}
+     }
 
 
 .newItem {
@@ -586,16 +587,22 @@ position: relative;
 
 @media screen and (max-width: 768px) {
     .nav {
-        text-align: left;
+       
         width: 100%;
         margin: 0;
-        padding-top: 10px;
+        padding: 10px;
+        border: 2px solid black;
     }
     .navlogo {
+      text-align: center;
       margin: 0 auto;
+      width: 30%;
+      border: 2px solid black;
     }
 
     .navToggle {
+        padding: 2px;
+        display: flex;
         margin-left: 20px;
     }
     .navMenu  {
@@ -708,14 +715,6 @@ position: relative;
 
 
 
-    .navLink {
-        margin-bottom: 15px;
-    }
-
-    .navToggle  .shopBag {
-        font-size: 14px;
-        cursor: pointer;
-    }
     
-
+   
 
