@@ -322,6 +322,10 @@ img {
     margin-top: 120px;
 }
 
+.collectionText a {
+    text-decoration: none;
+}
+
 
 /* Discount Section*/
 
@@ -388,6 +392,14 @@ img {
     background-color: var(--light-grey);
     padding: 20px;
     text-align: center;
+}
+
+.shopContent a {
+    text-decoration: none;
+}
+
+.shopContent a img {
+    margin-left: 10px;
 }
 
 .shopImg {
