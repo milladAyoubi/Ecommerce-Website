@@ -530,11 +530,14 @@ img {
     .featuredContainer {
         flex-direction: column;
     }
+    .Collection {
+        margin: 0 5px;
+    }
     .collectionContainer {
         flex-direction: column;
     }
     .collectionCard {
-        margin: 20px auto;
+        margin: 10px auto;
     }
     .collectionCard img {
         width: 100%;
