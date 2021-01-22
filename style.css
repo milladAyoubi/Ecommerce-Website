@@ -452,9 +452,6 @@ img {
 /*Responsive Design For Smaller Device Screens*/
 
 @media screen and (max-width: 1300px) {
-    .featuredContainer {
-        justify-content: space-between;
-    }
     .item {
         width: 100%;
         margin: 0 10px;
@@ -485,8 +482,7 @@ img {
     }
     .navlogo {
         text-align: center;
-        margin: 0 auto;
-        width: 30%;
+        width: 60%;
     }
     .navToggle {
         padding: 2px;
@@ -528,11 +524,17 @@ img {
     .Featured {
         height: auto;
     }
+    .item {
+        margin: 20px auto;
+    }
     .featuredContainer {
         flex-direction: column;
     }
     .collectionContainer {
         flex-direction: column;
+    }
+    .collectionCard {
+        margin: 20px auto;
     }
     .collectionCard img {
         width: 100%;
@@ -551,10 +553,11 @@ img {
         width: 100%;
     }
     .newItem {
-        margin-top: 40px;
+        margin: 40px 20px;
     }
     .newItemCard {
         margin: 0px;
+        padding: 0px;
     }
     .newItemOverlay .buttonDark {
         font-size: 10px;
