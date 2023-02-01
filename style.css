@@ -570,13 +570,13 @@ img {
     text-align: left;
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-gap: 50px;
     height: auto;
     color: #202020;
     margin: 0 2.5rem;
 }
 
 .shopText img {
+    margin: 0 auto;
     height: 100%;
 }
 
