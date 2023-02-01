@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping WebSite</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -32,7 +32,7 @@
 
             <div class="navMenu" id="nav-Menu">
                 <ul>
-                    <li class="navLink"><a href="#home">Home</a></li>
+                    <li class="navLink"><a href="#">Home</a></li>
                     <li class="navLink"><a href="#featured">Featured</a></li>
                     <li class="navLink"><a href="#collection">Collection</a></li>
                     <li class="navLink"><a href="#join">Join Us</a></li>
@@ -55,7 +55,6 @@
             <div class="homeContent">
                 <div class="home_text">
                     <h1>Bold Fashion Styles <br> That Stand Out</h1>
-                    <img class="ellipse" src="./people/Ellipse.png" alt="Ellipse">
                 </div>
                 <div class="homeData">
 
@@ -65,13 +64,13 @@
 
                     <div class="social_buttons">
                         <a href="#" class="social_button">
-                            <img src="./people/instagram_icon.png" alt="instagram_icon" width="120px">
+                            <img src="./people/instagram_icon.png" alt="instagram_icon" width="100px">
                         </a>
                         <a href="#" class="social_button">
-                            <img src="./people/snap_icon.png" alt="snap_icon" width="120px">
+                            <img src="./people/snap_icon.png" alt="snap_icon" width="100px">
                         </a>
                         <a href="#" class="social_button">
-                            <img src="./people/tiktok_icon.png" alt="tiktok_icon" width="120px">
+                            <img src="./people/tiktok_icon.png" alt="tiktok_icon" width="100px">
                         </a>
                     </div>
                 </div>
@@ -84,7 +83,9 @@
     </section>
     <!--Featured Section-->
 
-    <section class="Featured section_container " id="featured">
+
+    <div id="featured"></div>
+    <section class="Featured section_container ">
 
         <div class="container">
             <h2 class="sectionTitle">Featured</h2>
@@ -157,95 +158,78 @@
         </div>
     </section>
 
-
+    <div id="collection"></div>
+    <section class="Collection sectionTab">
+        <h2 class="sectionTitle">Collection</h2>
+        <p class="sectionText">These specific items at Venti will make you stand out and be bold!</p>
+        <div class="row">
+            <div class="container">
+                <div class="test_box box-01 col-xs-6 col-md-4">
+                    <div class="inner">
+                        <a href="#" class="test_click">
+                            <div class="flex_this">
+                                <h1 class="test_title">Linen Clothing</h1>
+                                <span class="test_link">View All</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="test_box box-02 col-xs-6 col-md-4">
+                    <div class="inner">
+                        <a href="#" class="test_click">
+                            <div class="flex_this">
+                                <h1 class="test_title">Jackets</h1>
+                                <span class="test_link">View All</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="test_box box-03 col-xs-6 col-md-4">
+                    <div class="inner">
+                        <a href="#" class="test_click">
+                            <div class="flex_this">
+                                <h1 class="test_title">Summer Shirts</h1>
+                                <span class="test_link">View All</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="test_box box-04 col-xs-6 col-md-4">
+                    <div class="inner">
+                        <a href="#" class="test_click">
+                            <div class="flex_this">
+                                <h1 class="test_title">Coats</h1>
+                                <span class="test_link">View All</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="test_box box-05 col-xs-6 col-md-4">
+                    <div class="inner">
+                        <a href="#" class="test_click">
+                            <div class="flex_this">
+                                <h1 class="test_title">Jeans</h1>
+                                <span class="test_link">View All</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="test_box box-06 col-xs-6 col-md-4">
+                    <div class="inner">
+                        <a href="#" class="test_click">
+                            <div class="flex_this">
+                                <h1 class="test_title">accessories</h1>
+                                <span class="test_link">View All</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!--Collection Section-->
-    <section class="Collection sectionTab" id="collection">
-        <h2 class="sectionTitle">Collection</h2>
-        <div class="collectionContainer ">
 
-            <div class="collectionCard">
-                <div class="collectionData">
-                    <div class="collectionText">
-                        <h3 class="collectionName">Linen</h3>
-                        <p class="collectionDescription">Straight From The Nile.</p>
-                        <a href="#" class="buttonLight">Buy Now</a>
-                    </div>
-                </div>
-                <img src="./people/dress.jpeg" alt="">
-
-            </div>
-
-            <div class="collectionCard">
-                <div class="collectionData">
-                    <div class="collectionText">
-                        <h3 class="collectionName">Long Sleeves</h3>
-                        <p class="collectionDescription">Super Long Sleeves.</p>
-                        <a href="#" class="buttonLight">Buy Now</a>
-                    </div>
-                </div>
-                <img src="./people/longsleeve.jpeg" alt="">
-
-            </div>
-
-
-            <div class="collectionCard">
-                <div class="collectionData">
-                    <div class="collectionText">
-                        <h3 class="collectionName">Coats</h3>
-                        <p class="collectionDescription">Made From 70% Sustainable Materaials.</p>
-                        <a href="#" class="buttonLight">Buy Now</a>
-                    </div>
-                </div>
-                <img src="./people/tops.jpeg" alt="">
-
-            </div>
-
-            <div class="collectionCard">
-                <div class="collectionData">
-                    <div class="collectionText">
-                        <h3 class="collectionName">Jackets</h3>
-                        <p class="collectionDescription">Dress To Impress.</p>
-                        <a href="#" class="buttonLight">Buy Now</a>
-                    </div>
-                </div>
-                <img src="./people/athlesuire.jpeg" alt="">
-
-            </div>
-
-            <div class="collectionCard">
-                <div class="collectionData">
-                    <div class="collectionText">
-                        <h3 class="collectionName">Hoodies</h3>
-                        <p class="collectionDescription">Both Comfortable and Fasionable.</p>
-                        <a href="#" class="buttonLight">Buy Now</a>
-                    </div>
-                </div>
-                <img src="./people/denim.jpeg" alt="">
-
-            </div>
-
-
-            <div class="collectionCard">
-                <div class="collectionData">
-                    <div class="collectionText">
-                        <h3 class="collectionName">Shirts</h3>
-                        <p class="collectionDescription">Quality, vibrant, Amaizing.</p>
-                        <a href="#" class="buttonLight">Buy Now</a>
-                    </div>
-                </div>
-                <img src="./people/jackets.jpeg" alt="">
-
-            </div>
-
-
-
-
-        </div>
-
-
-
-    </section>
 
 
 
@@ -256,15 +240,15 @@
         <div class="discountContainer ">
 
             <div class="discountText">
-                <h2 class="sectionTitle">Claim 20% Discount!</h2>
-                <p>Click Here To Claim!</p>
-                <a href="#" class="buttonDark">Claim</a>
 
-            </div>
-            <div class="discountImg">
-                <img src="./people/shopper.png" width="70%">
+                <div></div>
+                <div class="discountGroup">
+                    <h2 class="sectionTitle">Enjoy A 50% <br>Discount On US</h2>
+                    <span class="test_link">Apply Discount</span>
 
+                </div>
             </div>
+
 
         </div>
 
@@ -274,72 +258,27 @@
 
 
     <!--Shop Section-->
-    <section class="Shop" id="Shop">
-        <h2 class="sectionTitle">Shop</h2>
-        <div class="shopContainer">
+    <section class="Shop sectionTab">
 
-            <div class="shopWear ">
+        <div class="shopContainer ">
 
-                <div class="shopContent">
-                    <img src="./people/shop.jpeg" alt="" class="shopImg">
-                    <h3 class="shopTitle">Leather Boots.</h3>
-                    <span class="shopDescription">From $249.99</span>
-                    <a href="#" class="buttonLight">View Collection<img src="https://img.icons8.com/android/24/000000/long-arrow-right.png" width="10px"/></a>
+            <div class="shopText">
+
+                <div>
+                    <img src="./people/join_us_img.png" alt="join_us_img" width="90%">
+                </div>
+                <div class="discountGroup">
+                    <h2 class="sectionTitle">Enjoy A 50% <br>Discount On US</h2>
+                    <span class="test_link">Apply Discount</span>
+
                 </div>
             </div>
 
-            <div class="newItem">
 
-
-                <div class="newItemCard ">
-                    <img src="./people/shop6.jpeg" alt="" class="shopImgItem">
-                    <div class="newItemOverlay">
-                        <a href="#" class="buttonDark">Add To Cart</a>
-                    </div>
-                </div>
-
-
-                <div class="newItemCard">
-                    <img src="./people/shop1.jpeg" alt="" class="shopImgItem">
-                    <div class="newItemOverlay">
-                        <a href="#" class="buttonDark">Add To Cart</a>
-                    </div>
-                </div>
-
-                <div class="newItemCard">
-                    <img src="./people/shop2.jpeg" alt="" class="shopImgItem">
-                    <div class="newItemOverlay">
-                        <a href="#" class="buttonDark">Add To Cart</a>
-                    </div>
-                </div>
-                <div class="newItemCard ">
-                    <img src="./people/shop3.jpeg" alt="" class="shopImgItem">
-                    <div class="newItemOverlay">
-                        <a href="#" class="buttonDark">Add To Cart</a>
-                    </div>
-                </div>
-
-                <div class="newItemCard">
-                    <img src="./people/shop4.jpeg" alt="" class="shopImgItem">
-                    <div class="newItemOverlay">
-                        <a href="#" class="buttonDark">Add To Cart</a>
-                    </div>
-                </div>
-
-                <div class="newItemCard">
-                    <img src="./people/shop5.jpeg" alt="" class="shopImgItem">
-                    <div class="newItemOverlay">
-                        <a href="#" class="buttonDark">Add To Cart</a>
-                    </div>
-                </div>
-
-
-
-            </div>
         </div>
 
-    </section>
 
+    </section>
 
     <!--Smooth Scoll For Links-->
     <script src="https://unpkg.com/scrollreveal"></script>

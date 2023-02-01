@@ -102,7 +102,7 @@ p {
 
 .sectionTab {
     text-align: center;
-    margin: 20px;
+    margin: 10rem 5rem;
     height: auto;
 }
 
@@ -124,7 +124,7 @@ img {
 
 .nav {
     padding-top: 10px;
-    height: 70px;
+    height: 65px;
     display: flex;
     justify-content: space-between;
     background-color: white;
@@ -166,7 +166,7 @@ img {
 
 .navLink {
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: var(--t-color);
     text-decoration: none;
@@ -217,7 +217,7 @@ img {
 
 .homeContent {
     position: absolute;
-    top: 52%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -238,7 +238,7 @@ img {
 }
 
 .homeData {
-    margin-top: 1rem;
+    margin-top: 4rem;
     text-align: center;
 }
 
@@ -255,7 +255,7 @@ img {
 
 .social_buttons {
     position: relative;
-    top: 5rem;
+    top: 4rem;
     display: flex;
     justify-content: center;
 }
@@ -271,7 +271,7 @@ img {
 
 .main_button {
     position: relative;
-    padding: 2.4rem 1.6rem 2.2rem 1.6rem;
+    padding: 2.8rem 1.6rem 2.4rem 1.6rem;
     border: 4px solid white;
     border-radius: 200px 0 200px 0;
     background-color: transparent;
@@ -295,24 +295,147 @@ img {
     transition: 0.2s;
 }
 
+#collection {
+    position: relative;
+    bottom: 100px;
+}
+
+.container {
+    width: 100%;
+}
+
+.test_box .inner {
+    background: #333;
+    display: block;
+    height: auto;
+    margin: 1.4rem 0;
+    overflow: hidden;
+}
+
+.test_box .inner .test_click {
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    mix-blend-mode: normal;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.test_box .inner .test_click:hover {
+    background-color: rgba(55, 55, 55, 0.5);
+    mix-blend-mode: hargba(12, 46, 97, 0.5)
+}
+
+.flex_this {
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    display: inherit;
+    flex-wrap: inherit;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    width: 100%;
+}
+
+.test_box .inner .test_click:hover .flex_this {
+    margin-top: -5px;
+}
+
+.test_title {
+    display: block;
+    font-size: 3.5rem;
+    font-family: 'Bebas Neue', cursive;
+    width: 100%;
+}
+
+.test_link {
+    cursor: pointer;
+    border: 2px solid #fff;
+    display: inline-block;
+    font-size: 1em;
+    letter-spacing: .1em;
+    margin: 0 auto;
+    border-radius: 200px 0 200px 0;
+    padding: 0.6rem 5rem;
+    text-transform: uppercase;
+}
+
+.box-01 .inner {
+    background-image: url('./people/linen.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-02 .inner {
+    background-image: url('./people/jackets.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-03 .inner {
+    background-image: url('./people/shirts.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-04 .inner {
+    background-image: url('./people/coats.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-05 .inner {
+    background-image: url('./people/jeans.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-06 .inner {
+    background-image: url('./people/accessories.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 /* Featured Section */
 
 .Featured {
     text-align: center;
-    margin: 10rem 0 20rem 0;
+    margin: 10rem 0 10rem 0;
     z-index: 1;
 }
 
 .sectionTitle {
     font-family: 'Bebas Neue', cursive;
+    line-height: 95%;
     font-size: 86px;
 }
 
 .sectionText {
     position: relative;
     bottom: 1rem;
-    font-size: 32px;
+    margin-bottom: 2rem;
+    font-size: 24px;
     opacity: 0.8;
 }
 
@@ -421,23 +544,48 @@ img {
 /* Discount Section*/
 
 .discountContainer {
-    padding: 20px 0px;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
-    background-image: linear-gradient(90deg, #ffafbd, #ffc3a0);
-    height: auto;
-    width: 50%;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    border-radius: 5px;
-}
-
-.discountText p {
-    margin-bottom: 20px;
+    background-image: url('./people/promo.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    max-width: 1920px;
 }
 
 .discountText {
-    margin: auto;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 100%;
+    color: white;
+    margin: 0 auto;
+}
+
+.discountGroup {
+    margin: auto 0;
+}
+
+.discountGroup .test_link {
+    border: 4px solid white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.8s ease;
+}
+
+.discountGroup .test_link:hover {
+    background-color: white;
+    color: #202020;
+    transition: 0.2s ease;
+}
+
+.discountGroup .test_link .discountGroup h2 {
+    line-height: 100%;
+}
+
+.discountGroup .test_link {
+    margin: 1rem 0;
 }
 
 .discountText a {
@@ -448,7 +596,6 @@ img {
     position: relative;
     color: white;
     padding: 10px;
-    border-radius: 5px;
 }
 
 .disclaimer {
@@ -464,10 +611,28 @@ img {
 }
 
 .shopContainer {
+    margin: 0 auto;
+    text-align: center;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    max-width: 1920px;
+}
+
+.shopText {
+    text-align: left;
     display: grid;
-    grid-template-columns: 40% 60%;
-    gap: 0;
-    row-gap: 16px;
+    grid-template-columns: 60% 40%;
+    height: 100%;
+    color: #202020;
+    margin: 0 auto;
+}
+
+.shopText .discountGroup .test_link {
+    background-color: #202020;
+    border: 4px solid #202020;
+    color: white;
 }
 
 .shopWear {
