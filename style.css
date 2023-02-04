@@ -121,6 +121,7 @@ img {
     left: 0;
     z-index: 10;
     background-color: white;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
 .nav {
@@ -207,7 +208,7 @@ img {
 .home_text h1 {
     text-align: center;
     font-family: 'Bebas Neue', cursive;
-    font-size: 140px;
+    font-size: 14rem;
     color: white;
     line-height: 100%;
 }
@@ -272,7 +273,7 @@ img {
 
 .main_button {
     position: relative;
-    padding: 2.8rem 1.6rem 2.4rem 1.6rem;
+    padding: 2.4rem 1rem 1.9rem 1rem;
     border: 4px solid white;
     border-radius: 200px 0 200px 0;
     background-color: transparent;
@@ -603,12 +604,18 @@ img {
 
 /*Responsive Design For Smaller Device Screens*/
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1850px) {
+    .homeContent {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1570px) {
     .item {
         width: 100%;
         margin: 0 10px;
     }
-    .item img {
+    .itemImage {
         width: 100%;
     }
     .shopContainer {
@@ -623,10 +630,10 @@ img {
     }
 }
 
-
-/*Responsive Design For Mobile And Tablet Device Screens*/
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+    .home_text h1 {
+        font-size: 10rem;
+    }
     .nav {
         width: 100%;
         margin: 0;
@@ -642,21 +649,20 @@ img {
         margin-left: 20px;
     }
     .navMenu {
+        box-shadow: 0 50px 80px 0 rgba(0, 0, 0, 0.15);
         text-align: left;
         position: fixed;
-        top: 40px;
+        top: 62px;
         left: -100%;
         width: 50%;
-        height: 100vh;
+        height: 30vh;
         padding: 30px;
         background-color: white;
         transition: 0.4s;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 4px;
+        border-radius: 0 0 100px 0;
     }
     .navMenu li {
         position: relative;
-        right: 50px;
         justify-content: center;
         display: block;
     }
@@ -664,7 +670,19 @@ img {
         left: 0;
     }
     .selected a {
-        color: var(--secondary-color);
+        color: #ff3c7d;
+    }
+    .fashionName {
+        font-size: 2rem;
+    }
+}
+
+
+/*Responsive Design For Mobile And Tablet Device Screens*/
+
+@media screen and (max-width: 768px) {
+    .home_text h1 {
+        font-size: 6rem;
     }
     .homeContainer {
         margin-bottom: 40px;
@@ -716,5 +734,38 @@ img {
         font-size: 10px;
         opacity: 0.6;
         padding: 0px;
+    }
+    .main_button {
+        padding: 2.2rem 1rem 1.8rem 1rem;
+    }
+    .homeData .buttonDark {
+        padding: 1rem 5rem;
+    }
+    .social_button img {
+        width: 80px;
+    }
+    .fashionName {
+        font-size: 4rem;
+    }
+    .col-xs-6 {
+        width: auto;
+    }
+    .test_box {
+        width: 100%;
+    }
+    .inner {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+    .discountGroup .sectionTitle {
+        font-size: 5rem;
+    }
+    .Shop {
+        margin: 0 auto;
+    }
+    .shopText {
+        display: inline-block;
     }
 }
