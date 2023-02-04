@@ -675,6 +675,9 @@ img {
     .fashionName {
         font-size: 2rem;
     }
+    .discountGroup .sectionTitle {
+        font-size: 6rem;
+    }
 }
 
 
@@ -766,6 +769,33 @@ img {
         margin: 0 auto;
     }
     .shopText {
-        display: inline-block;
+        display: block;
+    }
+    .discountGroup .sectionTitle {
+        text-align: center;
+    }
+    .join .section_container {
+        padding: 10px;
+    }
+    .shopText img {
+        width: 100%;
+    }
+    .email_input {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .shopText .discountGroup .test_link {
+        width: 100%;
+    }
+    .discountText {
+        display: block;
+    }
+    .discountText .discountGroup {
+        position: relative;
+        top: 40%;
+        text-align: center;
+    }
+    .shopText .discountGroup .sectionTitle {
+        margin: 2rem 0;
     }
 }
