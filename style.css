@@ -584,7 +584,9 @@ img {
 .shopText .discountGroup .test_link {
     background-color: #202020;
     border: 4px solid #202020;
-    padding: 0.8rem 13rem;
+    padding: 0.8rem 0;
+    text-align: center;
+    width: 400px;
     color: white;
 }
 
@@ -596,10 +598,9 @@ img {
     background-color: #20202021;
     margin: 2rem 0 1rem 0;
     border-radius: 100px;
-    padding: 1rem 12rem;
+    padding: 1rem 0;
+    width: 400px;
 }
-
-.social {}
 
 
 /*Responsive Design For Smaller Device Screens*/
@@ -628,11 +629,20 @@ img {
     .shopImgItem {
         width: 100%;
     }
+    .email_input {
+        width: 320px;
+    }
+    .shopText .discountGroup .test_link {
+        width: 320px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
     .home_text h1 {
         font-size: 10rem;
+    }
+    .shopText .discountGroup .test_link {
+        text-align: center;
     }
     .nav {
         width: 100%;
@@ -654,7 +664,7 @@ img {
         position: fixed;
         top: 62px;
         left: -100%;
-        width: 50%;
+        width: 30%;
         height: 30vh;
         padding: 30px;
         background-color: white;
@@ -684,6 +694,19 @@ img {
 /*Responsive Design For Mobile And Tablet Device Screens*/
 
 @media screen and (max-width: 768px) {
+    .sectionText {
+        font-size: 1.8rem;
+        margin: 2rem 0;
+    }
+    .section_container {
+        padding: 0;
+    }
+    .Collection {
+        margin: 0;
+    }
+    .navMenu {
+        width: 60%;
+    }
     .home_text h1 {
         font-size: 6rem;
     }
@@ -797,5 +820,11 @@ img {
     }
     .shopText .discountGroup .sectionTitle {
         margin: 2rem 0;
+    }
+    .shopText img {
+        object-fit: cover;
+        width: 50px;
+        height: 500px;
+        width: 100%;
     }
 }
